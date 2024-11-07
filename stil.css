@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #E4E4E4;
+	color: #0A2303;
+}
+
+/* Başlık */
+header { 
+	background-color: #261313;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+/* Menü */
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #311C1C;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 1rem;
+	transition: background 0.3s, transfrom 0.2;
+}
+
+nav a:hover {
+	background-color: #554646;
+}
+
+nav a:active {
+	transform: scale(0.95); /* Tıklama Efekti */
+
+}
+
+/* Ana İçerik */
+main {
+	flex: 1;
+	padding: 2rem;
+	text-align: left;
+	
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+article {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid #ddd;
+}
+
+footer {
+	background-color: #4D613B;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+
+/* Responsive Tasarım*/
+@media (max-width : 744px ){
+	nav {
+		flex-direction: column;
+	}
+}
+
